@@ -52,6 +52,7 @@ public class Group {
 				}
 			}
 			students[i] = student;
+			student.setGroupName(this.groupName);
 			System.out.println("Student " + student.getLastName() + " is added to this group.");
 		} catch(GroupOverflowException e) {
 			System.out.println(e);
