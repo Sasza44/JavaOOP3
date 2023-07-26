@@ -65,7 +65,7 @@ public class Group {
 		int i = 0;
 		try {
 			while(students[i] != null) {
-				if (students[i].getLastName() == lastName) {
+				if (students[i].getLastName().equals(lastName)) {
 					b = true;
 					return students[i];
 				}
